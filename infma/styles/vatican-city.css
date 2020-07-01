@@ -1,0 +1,316 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+ 
+ /* Placing header links right of page and general styling*/
+ 
+ 
+.headerlinks  {
+	
+	text-align: right;
+ 
+}
+/* forcing header links to appear on the same line */
+.headerlinks li  {
+	display: inline-block;
+	 
+ 
+   }
+li {
+	list-style: none;
+}
+
+/* force nev inline and remove bulletting*/
+.primarynav {
+	text-align: center;
+	background-color:   #7F7F7E;
+ 
+}
+.primarynav li  {
+	list-style: none;
+	display: inline-block;
+	border-right: 1px solid white;
+	min-width: 100px;
+}
+/* style nav to bar*/
+
+
+.primarynav a {
+	color: white;
+	padding: 0.5rem;
+    
+}
+  
+.primarynav a:hover {
+	color: pink;
+}
+   
+.primarynav li:first-child a {
+	border-left: 1px solid white;
+}
+   
+   /* single column layout (first page and travel tips) */
+
+
+
+ 
+ /*across site - positioning body and font settings */
+body {
+	width: 80%;
+	max-width: 1920px;
+	min-width: 300px;
+	margin: 1rem auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color : rgba(255,255,249,1); /* color scheme http://paletton.com/#uid=11H0u0k0Lom0JD50Vuq0ij204fU */
+	border: 1.5px solid lightgrey;
+	position: relative;
+	padding: 2rem;
+}
+
+
+main {
+	margin: 1rem auto 1rem auto;  
+	
+}
+ /* readabillity: formatting using using html and semantic elements  */
+
+section, h1, h2, h3, h4, p, figure, ul{
+	margin:  1.7rem auto 1.7rem auto;
+	padding: 0rem 0.5rem 0rem 0.5rem;
+	
+
+  }
+  
+h1 {
+	font-size: 2.625rem;
+	font-weight: 700;
+  }
+  
+h2 {
+  font-size: 2.250em;
+  font-weight: 700;
+  }
+  
+ h3 {
+	font-size: 1.875rem;
+	font-weight: 700;
+}	
+
+h4 {
+font-size: 1.500em;
+}
+
+
+article {
+	margin:  2rem auto 2rem auto;
+   }
+   
+ 
+p, li , aside  {
+	line-height: 1.5;
+	letter-spacing: normal;
+	font-size: 1.3rem;
+  }
+  
+    /* overriding line-length for home  page*/
+ .introduction p, .introduction ul, .reviews p {
+	max-width: 75%;
+	margin:  1.7rem auto 1.7rem 0rem;
+ }
+
+ 
+
+/* layout and formatting footer links*/
+.pagefooter li {
+	list-style: none;
+	display: inline-block;
+	min-width: 100px;
+	padding: 0rem 1.5rem;
+
+}
+
+.pagefooter    {
+	text-align: center;
+	
+
+	
+}
+footer {
+	border-top: 1px solid lightgrey;
+ 
+}
+  
+ 	/* general styling of links inc particular state of special links*/
+a {
+	text-decoration: none;
+		
+	}
+p a:link {
+    color: blue;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+p  a:visited {
+    color: darkgreen; 
+	text-decoration: none;
+}
+
+p  a:hover ,.secondarynav a:hover, .pagefooter a:hover, .headerlinks a:hover{
+    color: hotpink;
+}
+
+ p a:active {
+    color: FireBrick;
+	text-decoration: none;
+
+}  
+ 
+.headerlinks a, .pagefooter a{
+	color: #1B3E3E;
+}
+    /* specific targeting */
+   
+  /* positioning Home/Vatican city page */
+
+#pontesantangelo { /* positioning front big image */
+	width: 100%;
+ 
+}
+  /* formatting reviews section on Home/Vatican city page */
+
+ #stpetersbasilica,   #sistineimage, figcaption{ 
+	width: 50%;
+	margin: 0.5rem auto;
+  }
+  
+ figcaption {
+	margin: 0rem;
+	padding : 0rem 0rem 1rem 0rem;
+	
+  }
+
+ .reviews article, .title {
+	border: 2px solid DarkSlateGray;
+	padding: 0.5rem;
+	background-color: hsl(60, 21%, 94%);
+
+ }
+  
+/* multi column in Places page */
+
+/* creation of flex container */
+.attractions {
+  
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0rem 0rem;
+}
+/* targeting of flex items */
+
+.place {
+	width: 350px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+	margin-left: 3.5rem;
+	background-color: #F2F2EB;
+	padding: 1rem;
+	border: 1px solid lightgrey;
+
+}
+.place img{
+	width: 95%;
+    display: block;
+    border: 1px solid darkgrey;
+	margin: 0.5rem auto;
+}
+.place h2 {
+	
+ 	text-align: center;
+}
+ 
+/* layout transport page */
+ 
+#leftcol {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+}
+#rightcol {
+	display: inline-block;
+	width: 79%;
+	vertical-align: top;
+}
+
+/* layout and formatting for travel-tips page */
+
+.secondarynav li 	{
+	list-style: none;
+	border-bottom: 2px solid grey;
+ 	width: 80%;
+}
+.secondarynav li a {
+	color: #1B3E3E;
+ 	padding: 0.25rem;
+	display: block;
+ 
+}
+
+.introduction h2 {
+	padding-bottom: 0.5rem;
+}
+
+
+ #travelcontent h2, #travelcontent h3 {
+		
+	margin: 1rem auto;
+	padding-right: 1rem;
+  }
+ /* positioning aside element for travel-tips page */
+
+  /* setting main to relative position */
+
+#travelcontent {
+	width: 80%;
+	margin: 1rem  ;
+	position: relative;	
+}
+#access {
+	position: absolute;
+	top: 0;
+	left: 90%;
+	margin: 5rem 5rem auto auto;
+	width: 30%;
+ 	border-bottom: 1px solid lightgrey;
+	overflow: hidden;
+ 	}
+	
+ #howtovisit h3 {
+	padding-right: 3rem;
+ }
+#travelcontent .introduction {
+	padding-top: 0.5rem;
+}
+
+ 
+ 
+
+ 
+ /* styling specific text*/
+ 
+.bold {
+	font-weight: bold;
+}
+
+
+ 
+ 
+ 
+	
